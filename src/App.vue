@@ -20,7 +20,9 @@
   <!--  <router-view></router-view>-->
   <router-view v-slot="{ Component, route}">
     <transition mode="out-in" name="fade">
-      <component :is="Component" :key="route.path"/>
+      <keep-alive>
+        <component :is="Component" :key="route.path"/>
+      </keep-alive>
     </transition>
   </router-view>
 </template>

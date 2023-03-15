@@ -13,7 +13,7 @@ const latest_property = {
     actions: {
         async fetch_latest_properties({commit}) {
             await EventService.get_latest_properties().then(res => {
-                console.log(res)
+                // console.log(res)
                 commit('SET_PROPERTIES', res['data']['properties'])
             })
         }

@@ -55,6 +55,14 @@ export default {
             }
         })
     },
+    async get_property(property_id) {
+        let tkn = localStorage.getItem('tkn')
+        return await apiClient.get(`${endpoint.PROPERTY_DETAILS}?property_id=${property_id}`, {
+            headers: {
+                AUTHORIZATION: `Bearer ${tkn}`,
+            }
+        })
+    },
 
 
 }

@@ -2,14 +2,17 @@
   <!--  <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 f border-b border-gray-200 dark:border-gray-600">-->
   <nav class="px-2 font-poppins backdrop-filter lg:backdrop-blur lg:bg-transparent md:bg-white sm:bg-white border-gray-200 py-2.5 dark:bg-gray-900 dark:border-gray-700 fixed w-full z-20 top-0 left-0">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
-      <a class="flex items-center" href="#">
+      <router-link :to="{name: 'home'}" class="flex items-center">
         <img alt="Itara Logo" class="h-6 mr-3 sm:h-10" src="../../assets/images/svg/favicon.png"/>
         <h2 class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">ITARA</h2>
-      </a>
+      </router-link>
       <div class="flex items-center md:order-2 ml-4">
 
         <!-- Dropdown menu -->
-        <AccountDropDown/>
+        <keep-alive>
+          <AccountDropDown/>
+        </keep-alive>
+
         <button aria-controls="mega-menu-full" aria-expanded="false"
                 class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 data-collapse-toggle="mega-menu-full" type="button">

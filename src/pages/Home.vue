@@ -61,6 +61,9 @@ export default {
     this.$store.dispatch('featured_property/fetch_featured_properties')
     this.$store.dispatch('latest_property/fetch_latest_properties')
     this.$store.dispatch('popular_property/fetch_popular_properties')
+    // ...mapActions({
+    //
+    // })
   },
   computed: {
     ...mapState({

@@ -18,7 +18,7 @@
 
       </div>
       <!--      <div class="section-contents pt-7  ">-->
-      <main v-show="properties.length" class="grid grid-cols-5 gap-1">
+      <main v-show="properties.length" class="grid grid-cols-4 gap-5">
         <!--        <swiper-->
         <!--            :breakpoints="{-->
         <!--              '@0.00': {-->
